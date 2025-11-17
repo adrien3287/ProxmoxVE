@@ -16,7 +16,7 @@ update_os
 msg_info "Installing Dependencies"
 $STD apt-get install -y \
   redis \
-  sqlite3
+  php8.2-sqlite3
 msg_ok "Installed Dependencies"
 
 PHP_VERSION="8.2" PHP_APACHE="YES" PHP_MODULE="redis, sqlite3" setup_php
